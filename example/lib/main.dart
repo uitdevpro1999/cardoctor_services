@@ -1,10 +1,12 @@
 import 'package:cardoctor_services/cardoctor_services.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:car_doctor_sdk_tracking/car_doctor_sdk_tracking.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  await AppTracking.instance.init("http://192.168.1.46/");
   runApp(const MyApp());
 }
 

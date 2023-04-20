@@ -1,3 +1,4 @@
+import 'package:car_doctor_sdk_tracking/car_doctor_sdk_tracking.dart';
 import 'package:flutter/material.dart';
 
 import 'container/shadow_card.dart';
@@ -25,7 +26,10 @@ class UtilityButton extends StatelessWidget {
           color: Colors.transparent,
           child: InkWell(
             borderRadius: BorderRadius.circular(16.0),
-            onTap: onTap,
+            onTap: (){
+              AppTracking.instance.trackButtonClick(title);
+              onTap?.call();
+            },
             child: Container(
               padding: EdgeInsets.fromLTRB(4, 16, 4, 12),
               child: Column(

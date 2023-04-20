@@ -49,6 +49,7 @@ class _CarServicePageState extends State<CarServicePage>
         title: 'Cứu hộ 24/7',
         onTap: () async {
           await carServicesController.onGetAccessToken(context);
+
           if (carServicesController.token != null ||
               carServicesController.token != "") {
             final option = CarDoctorOption(
@@ -189,6 +190,7 @@ class _CarServicePageState extends State<CarServicePage>
     );
     final dynamicLink =
     await FirebaseDynamicLinks.instance.buildLink(dynamicLinkParams);
+    print(dynamicLink);
     launchUrl(
       dynamicLink,
       mode: LaunchMode.externalApplication,

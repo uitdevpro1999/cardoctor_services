@@ -23,6 +23,7 @@ class SdkCarServices{
     carServicesController.name =name;
     carServicesController.phone =phone;
     carServicesController.identifier =identifier;
+    carServicesController.epasstoken= epasstoken;
     return Navigator.push(
       context,
       MaterialPageRoute(
