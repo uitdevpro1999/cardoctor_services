@@ -96,7 +96,7 @@ class _CarServicePageState extends State<CarServicePage>
           context,
           title: 'Thông báo',
           content: const Text(
-            "Để nhận tư vấn chăm sóc xe và sử dụng dịch vụ chẩn đoán bệnh xe miễn phí từ Car Doctor, Quý khách vui long cho phép hệ thống của Tổng Công ty Dịch vụ số Viettel truy vấn thông tin số hợp đồng, số điện thoại và dòng xe khi chuyển hướng tới ứng dụng dịch vụ Car Doctor",
+            "Để nhận tư vấn chăm sóc xe và sử dụng dịch vụ chẩn đoán bệnh xe miễn phí từ Car Doctor, Quý khách vui lòng cho phép hệ thống của Công ty Cổ phần Giao thông số Việt Nam truy vấn thông tin số hợp đồng, số điện thoại, biển số và dòng xe khi chuyển hướng tới ứng dụng dịch vụ Car Doctor",
             textAlign: TextAlign.center,
           ),
           primaryButtonTitle: 'Tiếp tục',
