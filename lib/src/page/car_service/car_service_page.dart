@@ -34,6 +34,7 @@ class _CarServicePageState extends State<CarServicePage>
   @override
   void initState() {
     super.initState();
+    carServicesController.onGetCommon();
     WidgetsBinding.instance.addPostFrameCallback((_) => _firstRun = false);
   }
 
@@ -92,11 +93,12 @@ class _CarServicePageState extends State<CarServicePage>
         icon: Assets.icons.carDoctor.svg(width: 55.0, height: 55.0,package: Consts.packageName),
         title: 'Khám chữa xe',
         onTap: () async {
+          final content = carServicesController.onGetText("CAR-SERVICE", "POLICY");
         showAlertDialog(
           context,
           title: 'Thông báo',
-          content: const Text(
-            "Để nhận tư vấn chăm sóc xe và sử dụng dịch vụ chẩn đoán bệnh xe miễn phí từ Car Doctor, Quý khách vui lòng cho phép hệ thống của Công ty Cổ phần Giao thông số Việt Nam truy vấn thông tin số hợp đồng, số điện thoại, biển số và dòng xe khi chuyển hướng tới ứng dụng dịch vụ Car Doctor",
+          content: Text(
+             content??"",
             textAlign: TextAlign.center,
           ),
           primaryButtonTitle: 'Tiếp tục',

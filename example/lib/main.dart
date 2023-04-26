@@ -54,13 +54,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String? token;//epass token
-  String contractId="1900690";
-  String name="NGUYỄN THÀNH TRUNG";
-  String phone="0901706555";
-  String identifier="001089044462";
+  String? EncryptionData;
+  String contractId="";
+  String name="";
+  String phone="";
+  String identifier="";
   Future<void> openSDK(BuildContext context) async{
-    final sdk = SdkCarServices(SdkFlavor.PRODUCTION,token,contractId,name,phone,identifier);
+    final sdk = SdkCarServices(SdkFlavor.STAGING,EncryptionData,contractId,name,phone,identifier);
      await sdk.open(context);
   }
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 name: cardoctor_services
 description: The Car Services SDK is a Flutter package for Epass Car Services.
-version: 0.0.3
+version: 0.0.6
 homepage: https://github.com/uitdevpro1999/cardoctor_services.git
 
 environment:
