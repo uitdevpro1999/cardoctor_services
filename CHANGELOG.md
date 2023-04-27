@@ -10,3 +10,5 @@
 * change pop up content
 * ## [0.0.6] - (2023-Apr-26)
 * update API getCommonMessage
+* ## [0.0.7] - (2023-Apr-27)
+* update SDK Tracking
